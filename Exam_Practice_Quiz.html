@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cross-Cultural Psychology — 2025 Exam Practice</title>
+<style>
+:root{
+  --bg:#f3f1ea; --panel:#fbfaf6; --panel2:#f6f3ea; --line:#e3ddcd;
+  --navy:#37425b; --navy2:#46537094; --slate:#5f7185; --ink:#2c313c;
+  --gold:#a98a55; --goldlt:#f2ead6; --green:#5d7d57; --greenbg:#eaf1e6;
+  --red:#a85a4b; --redbg:#f6e9e4; --muted:#8a8f9c;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"Iowan Old Style","Palatino Linotype",Georgia,serif;background:var(--bg);color:var(--ink);line-height:1.6}
+.wrap{display:flex;min-height:100vh}
+/* sidebar */
+.side{width:248px;background:var(--panel);border-right:1px solid var(--line);padding:26px 20px;position:sticky;top:0;height:100vh;overflow-y:auto;flex-shrink:0}
+.brand{font-size:1.18rem;color:var(--navy);font-weight:600;letter-spacing:.3px;line-height:1.3}
+.brand small{display:block;font-size:.72rem;color:var(--gold);letter-spacing:2px;text-transform:uppercase;margin-top:6px;font-weight:600}
+.navsec{margin-top:26px;font-size:.68rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--muted);margin-bottom:8px}
+.navlink{display:flex;justify-content:space-between;align-items:center;padding:9px 12px;border-radius:8px;color:var(--slate);cursor:pointer;font-size:.92rem;transition:.18s;margin-bottom:3px}
+.navlink:hover{background:var(--panel2);color:var(--navy)}
+.navlink.active{background:var(--goldlt);color:var(--navy);font-weight:600}
+.navlink .cnt{font-size:.72rem;color:var(--gold);background:#fff;border:1px solid var(--line);border-radius:20px;padding:1px 8px}
+.scorebox{margin-top:24px;background:var(--panel2);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:center}
+.scorebox .big{font-size:2rem;color:var(--navy);font-weight:600}
+.scorebox .lbl{font-size:.72rem;letter-spacing:1px;text-transform:uppercase;color:var(--muted)}
+.scorebox .pct{font-size:.9rem;color:var(--gold);margin-top:4px}
+.resetbtn{margin-top:12px;width:100%;padding:8px;border:1px solid var(--line);background:#fff;color:var(--slate);border-radius:8px;cursor:pointer;font-family:inherit;font-size:.82rem}
+.resetbtn:hover{background:var(--redbg);color:var(--red);border-color:var(--red)}
+/* main */
+.main{flex:1;padding:42px 54px;max-width:920px}
+.hero{margin-bottom:34px}
+.hero h1{font-size:2.1rem;color:var(--navy);font-weight:600;line-height:1.2}
+.hero .sub{color:var(--slate);margin-top:10px;font-size:1.02rem}
+.hero .meta{margin-top:14px;font-size:.82rem;color:var(--muted);font-style:italic}
+.themehd{display:flex;align-items:baseline;gap:14px;margin:38px 0 6px}
+.themehd h2{font-size:1.35rem;color:var(--navy);font-weight:600}
+.themehd .tag{font-size:.7rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);background:var(--goldlt);padding:3px 10px;border-radius:20px}
+.themedesc{color:var(--slate);font-size:.92rem;margin-bottom:18px;font-style:italic}
+/* card */
+.q{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:24px 26px;margin-bottom:18px;box-shadow:0 1px 3px rgba(55,66,91,.04)}
+.q .qnum{font-size:.72rem;letter-spacing:1.5px;text-transform:uppercase;color:var(--gold);font-weight:600;margin-bottom:8px}
+.q .qtext{font-size:1.06rem;color:var(--ink);font-weight:500;margin-bottom:16px;line-height:1.5}
+.opt{display:flex;align-items:flex-start;gap:11px;padding:12px 15px;border:1px solid var(--line);border-radius:10px;margin-bottom:9px;cursor:pointer;transition:.15s;background:#fff}
+.opt:hover{border-color:var(--gold);background:var(--panel2)}
+.opt .key{flex-shrink:0;width:24px;height:24px;border-radius:50%;border:1.5px solid var(--line);display:flex;align-items:center;justify-content:center;font-size:.8rem;color:var(--slate);font-weight:600}
+.opt .otext{flex:1;font-size:.96rem;color:var(--ink)}
+.opt.correct{background:var(--greenbg);border-color:var(--green)}
+.opt.correct .key{background:var(--green);border-color:var(--green);color:#fff}
+.opt.wrong{background:var(--redbg);border-color:var(--red)}
+.opt.wrong .key{background:var(--red);border-color:var(--red);color:#fff}
+.opt.locked{cursor:default;pointer-events:none;opacity:.96}
+.opt.dim{opacity:.55}
+.expl{margin-top:6px;padding:14px 16px;border-radius:10px;background:var(--goldlt);border-left:3px solid var(--gold);font-size:.92rem;color:var(--navy);display:none}
+.expl.show{display:block}
+.expl b{color:var(--gold)}
+.foot{margin-top:46px;padding-top:22px;border-top:1px solid var(--line);color:var(--muted);font-size:.82rem;font-style:italic;text-align:center}
+@media(max-width:880px){.wrap{flex-direction:column}.side{width:100%;height:auto;position:relative}.main{padding:28px 22px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <aside class="side">
+    <div class="brand">Cross-Cultural Psychology<small>2025 Exam Practice</small></div>
+    <div class="navsec">Themes</div>
+    <div id="nav"></div>
+    <div class="scorebox">
+      <div class="lbl">Your Score</div>
+      <div class="big"><span id="sc">0</span>/<span id="tot">0</span></div>
+      <div class="pct" id="pct">Answer questions to begin</div>
+      <button class="resetbtn" onclick="resetAll()">Reset quiz</button>
+    </div>
+  </aside>
+  <main class="main">
+    <div class="hero">
+      <h1>2025 Exam — Practice Quiz</h1>
+      <div class="sub">Every question from the 2025 paper, grammar-corrected and rebuilt in true exam form. Click an answer to lock it in — you'll see instantly whether it's right, plus the reasoning.</div>
+      <div class="meta">Prepared for Sezen · 40 questions across five themes · immediate feedback &amp; explanations</div>
+    </div>
+    <div id="quiz"></div>
+    <div class="foot">Cross-Cultural Psychology · Practice set built from the 2025 exam · Good luck, Sezen.</div>
+  </main>
+</div>
+<script>
+const THEMES=[
+{id:"t1",name:"Theme 1 — Culture, Self &amp; Personality",desc:"Cross-cultural research designs, emic/etic constructs, defining culture, Schwartz values, independent vs. interdependent self."},
+{id:"t2",name:"Theme 2 — Acculturation &amp; Adaptation",desc:"Stages of culture shock, psychological vs. sociocultural adaptation, the immigrant paradox, age of migration, multicultural schooling."},
+{id:"t3",name:"Theme 3 — Multicultural Identity &amp; Contact",desc:"Frame-switching, Third Culture Kids, diversity approaches, the MPQ traits, Bochner's friendship networks, predictors of adaptation."},
+{id:"t4",name:"Theme 4 — Culture at Work",desc:"Individualism/collectivism in teams, leadership, creativity, social loafing, power distance &amp; uncertainty avoidance, diversity policy."},
+{id:"t5",name:"Theme 5 — Culture &amp; Mental Health",desc:"Cultural competence in therapy, hikikomori, culture-bound syndromes, eating disorders, migration stress, protective factors, engagement."}
+];
+const Q=[
+/* ================= THEME 1 ================= */
+{t:"t1",q:"Jack knows personality has five factors (the Big Five). He wants to study it in a non-Western country to see whether the national mean scores differ from Western samples, so he runs the same questionnaire in Vietnam. Which type of cross-cultural study is this?",
+o:["Structure-oriented study","Level-oriented study","Exploratory study","Contextual, theory-based study"],c:1,
+e:"A <b>level-oriented</b> study compares the <i>amount/score</i> of an existing construct across cultures (do the Vietnamese score higher or lower?). A <i>structure-oriented</i> study instead asks whether the construct itself is organised the same way (does the five-factor structure even hold?)."},
+
+{t:"t1",q:"In Professor Cheung's research (discussed in Hiemstra's lecture), she measures the Big Five (OCEAN) in China and also finds an additional Interpersonal Relatedness / 'QH-A' factor that appears specific to Chinese culture. How is this combination best described?",
+o:["Both OCEAN and QH-A are emic constructs","Both OCEAN and QH-A are etic constructs","OCEAN is emic and QH-A is etic","OCEAN is etic and QH-A is emic"],c:3,
+e:"<b>Etic</b> = universal, found across cultures (OCEAN travels everywhere). <b>Emic</b> = specific to one culture (the Interpersonal Relatedness / QH-A factor emerged only in the Chinese context). So OCEAN is etic, QH-A is emic."},
+
+{t:"t1",q:"According to Heine, which of the following is NOT one of the challenges in defining culture?",
+o:["The WEIRD problem","There are no clear-cut boundaries between cultures","Cultures change and evolve over time","There is individual variability within any culture"],c:0,
+e:"The <b>WEIRD</b> problem (over-reliance on Western, Educated, Industrialised, Rich, Democratic samples) is a critique of <i>psychology's sampling</i>, not a difficulty in <i>defining</i> culture. Fuzzy boundaries, change over time, and within-culture variability are the genuine definitional challenges."},
+
+{t:"t1",q:"Which of the following is NOT one of the 10 basic human values in Schwartz's theory?",
+o:["Security","Hedonism","Benevolence","Self-worth"],c:3,
+e:"Schwartz's ten values are self-direction, stimulation, hedonism, achievement, power, security, conformity, tradition, benevolence and universalism. <b>Self-worth</b> is not on the list."},
+
+{t:"t1",q:"What is ethnocentrism?",
+o:["Adapting your behaviour to fit whatever culture you are in","Judging other cultures by the standards of your own culture","Believing all cultures are equally valid and withholding judgement","Losing your own cultural identity after living abroad"],c:1,
+e:"<b>Ethnocentrism</b> = using your own culture as the yardstick and evaluating others against it (the opposite of cultural relativism). Option C describes cultural relativism."},
+
+{t:"t1",q:"What characterizes an interdependent self?",
+o:["Describing oneself through personal traits and individual achievements","Valuing independence over group harmony","Defining the self in terms of relationships to significant others","Making decisions without considering others' opinions"],c:2,
+e:"An <b>interdependent self</b> (typical of collectivistic cultures) is defined relationally — through roles and bonds with family and in-group. The other options describe the <i>independent</i> self."},
+
+{t:"t1",q:"Anna is very sociable, forms new connections easily, and within a few days is already calling her new classmates 'friends'. What does this suggest about her self-concept?",
+o:["Individualism / independent self","Individualism / interdependent self","Collectivism / interdependent self","Collectivism / independent self"],c:0,
+e:"Easily forming many loose, voluntary friendships is a hallmark of an <b>independent self</b> in an <b>individualistic</b> culture — relationships are chosen and fluid rather than fixed and deeply obligated."},
+
+{t:"t1",q:"In a mirror (self-awareness) study, who becomes more self-critical — Katie (individualistic) or Aori (collectivistic)?",
+o:["Katie becomes more self-critical; Aori does not","Aori becomes more self-critical; Katie does not","Both become more self-critical","Neither becomes more self-critical"],c:0,
+e:"Seeing yourself in a mirror raises <b>self-awareness</b>, which amplifies self-criticism mainly for people from <b>individualistic</b> cultures (Katie). Collectivists like Aori are already chronically attending to how others see them, so the mirror adds little."},
+
+/* ================= THEME 2 ================= */
+{t:"t2",q:"A girl felt sad and lost when she first arrived in a new country to study, but after a year she feels better, has made friends, and copes well. Which stage of culture shock is she in now?",
+o:["Honeymoon","Culture shock","Adjustment","Acculturation"],c:2,
+e:"The U-curve runs Honeymoon → Culture shock (crisis) → <b>Adjustment</b> (recovery) → Mastery. Feeling better, making friends and coping after a year places her in the <b>adjustment</b> stage."},
+
+{t:"t2",q:"For immigrants with a strong ethnic profile (orientation toward their heritage culture), what happens to their psychological versus sociocultural adaptation?",
+o:["Psychological adaptation will be more positive than sociocultural adaptation","Both will be equally good","Sociocultural adaptation will be better than psychological","Both will be worse"],c:0,
+e:"A strong ethnic/heritage orientation protects <b>psychological</b> well-being (identity, self-esteem, lower stress) but does less for <b>sociocultural</b> fit in the host society (navigating school, language, daily life). So psychological > sociocultural."},
+
+{t:"t2",q:"What is the gender difference in adaptation found in the research?",
+o:["Boys show better psychological adaptation","Girls show better psychological adaptation","There is no gender difference in adaptation","Boys show better sociocultural adaptation"],c:0,
+e:"The finding is that <b>boys</b> tend to report somewhat better <b>psychological</b> adaptation, whereas girls often carry more internalising stress during acculturation."},
+
+{t:"t2",q:"Which of the following is NOT a significant predictor of the immigrant paradox?",
+o:["Socio-economic status (SES)","Family reunion","Length of residence","Cultural diversity of the context"],c:0,
+e:"The immigrant paradox (recent immigrants sometimes doing better than expected) is predicted by factors like length of residence, family reunification and the diversity of the receiving context. <b>SES</b> was not a significant predictor here."},
+
+{t:"t2",q:"As a teacher, what is the most effective strategy for improving the academic performance of immigrant children?",
+o:["Hold them to lower expectations to reduce stress","Organize activities that encourage family reunion and involvement","Discourage use of the heritage language at school","Place them only with peers from their own culture"],c:1,
+e:"Strengthening <b>family connection and reunion/involvement</b> supports immigrant children's well-being and, in turn, their academic performance — family is a key protective resource."},
+
+{t:"t2",q:"Looking at children who immigrated from Hong Kong to Canada, which statement is correct?",
+o:["Children whose parents immigrated when the parents were under 15 adapt better","Children who immigrated before age 15 adapt better to Canadian culture","Children who immigrated after age 15 adapt better","Length of residence does not matter much"],c:1,
+e:"<b>Earlier age of migration</b> (before ~15) predicts better adaptation to the host culture, because younger children acquire the language and cultural norms more readily during a sensitive developmental window."},
+
+{t:"t2",q:"How does a multicultural approach influence the academic and social integration of international students?",
+o:["It helps social integration but harms academic performance","It positively enhances both academic and social integration","It helps academics but isolates students socially","It has no measurable effect"],c:1,
+e:"A <b>multicultural approach</b> (valuing and including students' cultural backgrounds) <b>positively enhances both</b> academic outcomes and social integration."},
+
+/* ================= THEME 3 ================= */
+{t:"t3",q:"Which of the following is an example of cultural frame-switching?",
+o:["A bilingual person who shifts behaviour and language depending on whether they are at home or at work","A person who refuses to adapt and keeps the same behaviour everywhere","A person who permanently abandons their heritage culture","A monolingual person learning a single second language"],c:0,
+e:"<b>Frame-switching</b> = a bicultural person toggling between cultural 'frames' (norms, language, behaviour) in response to cues in the environment — e.g. switching language and manner between home and work."},
+
+{t:"t3",q:"What is a defining feature of a Third Culture Kid (TCK)?",
+o:["They are strongly ethnocentric and attached to a single nation","They experience a global identity, are less ethnocentric, and hold multiple worldviews","They never identify with any culture at all","They reject their parents' culture entirely"],c:1,
+e:"<b>TCKs</b> grow up across several cultures and build a <b>global identity</b>: typically less ethnocentric, more open, and able to hold multiple cultural worldviews at once."},
+
+{t:"t3",q:"Which classroom is likely to achieve the most inclusion?",
+o:["An international classroom with a multicultural approach","A mononational classroom with a multicultural approach","An international classroom with a colourblind approach","A mononational classroom with a colourblind approach"],c:0,
+e:"Maximum inclusion comes from combining <b>diversity</b> (an international mix of students) with a <b>multicultural approach</b> that actively recognises and values those differences."},
+
+{t:"t3",q:"In Hofhuis's research, which MPQ trait acts as a buffer against stress?",
+o:["Emotional stability","Flexibility","Open-mindedness","Social initiative"],c:0,
+e:"On the Multicultural Personality Questionnaire, <b>emotional stability</b> is the trait that buffers stress — it governs how calmly someone copes under pressure. Open-mindedness and social initiative drive engagement, not stress-resistance."},
+
+{t:"t3",q:"Which type of student shows the most significant increase in Open-mindedness and Social Initiative during the first semester?",
+o:["Local students without prior international experience","International students with extensive prior travel","Exchange students returning for a second time","Students who studied abroad in high school"],c:0,
+e:"<b>Local students with no prior international experience</b> have the most room to grow, so they show the largest gains in open-mindedness and social initiative when first exposed to an international environment."},
+
+{t:"t3",q:"Maria from Brazil has many international friends, but she also stays close to Brazilian friends abroad and keeps regular contact with family and friends back home. In Bochner's model of functional friendship networks, which network is described by her ties to co-nationals and home?",
+o:["Primary (co-national) network","Secondary (host-national) network","Tertiary (other international) network","Multicultural network"],c:0,
+e:"Bochner's <b>primary network</b> = bonds with fellow co-nationals (and home), providing emotional support and cultural identity. The secondary network is host nationals; the tertiary is other internationals."},
+
+{t:"t3",q:"Which diversity approach is most effective for resolving cultural misunderstandings?",
+o:["Integration approach","Multicultural approach","Colourblind approach","Assimilation approach"],c:1,
+e:"A <b>multicultural approach</b> — openly acknowledging and valuing cultural differences — works best for resolving misunderstandings, because it brings the differences into the open rather than ignoring them (colourblind)."},
+
+{t:"t3",q:"According to the texts, which factor best predicts better psychological adaptation for international students?",
+o:["Social support","Language proficiency","Academic grades","Length of the degree programme"],c:0,
+e:"<b>Social support</b> is the strongest, text-supported predictor of <b>psychological</b> adaptation. (Language proficiency matters more for <i>sociocultural</i> adaptation.)"},
+
+/* ================= THEME 4 ================= */
+{t:"t4",q:"John is frustrated because his teammate Aoki, from Japan, rarely speaks up or shares ideas. What is the best cultural explanation?",
+o:["Aoki is simply unmotivated and disengaged","John is judging Aoki through an individualistic lens that prizes independent self-expression, while Aoki is acting from a collectivistic mode that prioritizes group harmony","Aoki does not understand the task","There is no cultural dimension to this conflict"],c:1,
+e:"This is a clash of cultural lenses: John (individualistic) expects people to voice independent ideas; Aoki (collectivistic) holds back to preserve <b>group harmony</b> and defer to consensus. Neither is 'wrong' — they read the situation differently."},
+
+{t:"t4",q:"Which leadership style is found to be universally endorsed across cultures?",
+o:["Charismatic / value-based leadership","Participative leadership","Paternalistic leadership","Autonomous leadership"],c:0,
+e:"In the GLOBE findings, <b>charismatic/value-based</b> leadership is the most universally endorsed style. Participative, paternalistic and autonomous styles are valued very differently across cultures."},
+
+{t:"t4",q:"If Nashiki proposes a creative idea inside a Japanese company, which aspect of creativity is likely to be emphasized?",
+o:["A novel idea (originality above all)","A useful idea (practical and appropriate)","A purely individual idea","A disruptive idea that breaks group norms"],c:1,
+e:"Creativity has two components: novelty and usefulness. In <b>collectivistic</b> contexts like Japan, the <b>useful/appropriate</b> dimension is weighted more heavily, whereas Western contexts lean toward novelty."},
+
+{t:"t4",q:"A group of Chinese (collectivistic) students works on a group project. What is most likely to happen?",
+o:["Social loafing increases","Social loafing decreases — there is more social striving because shared goals are prioritized","Group performance collapses","Members refuse to cooperate"],c:1,
+e:"In collectivistic cultures, working in a group can trigger <b>social striving</b> rather than social loafing: members work <i>harder</i> for the shared goal, so loafing goes down."},
+
+{t:"t4",q:"Kevin is American (individualistic). In which situation is social loafing prevented the most?",
+o:["When he works in a large anonymous group","When he works in a small group","When he works alone (individually accountable)","When the task is unimportant"],c:2,
+e:"For an individualist, loafing is minimised when effort is clearly <b>identifiable and individually accountable</b> — i.e. when Kevin works alone or his contribution is singled out."},
+
+{t:"t4",q:"A 'teacher-centred classroom' is an example of '…', and a teacher openly saying 'I don't know' is an example of '…'.",
+o:["Small power distance; high uncertainty avoidance","Large power distance; low uncertainty avoidance","Large power distance; high uncertainty avoidance","Small power distance; low uncertainty avoidance"],c:1,
+e:"A teacher-centred classroom reflects <b>large power distance</b> (clear hierarchy, teacher as authority). A teacher comfortably admitting 'I don't know' reflects <b>low uncertainty avoidance</b> (tolerance of ambiguity)."},
+
+{t:"t4",q:"What is an effective strategy for enhancing productivity in a diverse team?",
+o:["Include ideas from everyone","Leaders make sure both minority and majority groups know their input is visible and valued","Both of the above are correct","Neither is effective"],c:2,
+e:"Both matter: actively <b>soliciting everyone's ideas</b> and <b>signalling that all contributions are visible and valued</b> together unlock the performance benefit of diversity."},
+
+{t:"t4",q:"Which diversity policy positively influences leaders' perceptions toward minority groups?",
+o:["Value-in-homogeneity","Colourblind","Multiculturalism","Assimilationism"],c:2,
+e:"<b>Multiculturalism</b> — recognising and valuing group differences — improves leaders' attitudes toward minority groups, unlike colourblind or homogeneity-valuing policies."},
+
+{t:"t4",q:"What was a criticism of Ely and Thomas's (2001) model, as raised by Hofhuis?",
+o:["They ignore that some organizations simply do not want diversity (a negative-approach blind spot)","They studied only Japanese firms","They overstated the costs of diversity","They used purely qualitative data"],c:0,
+e:"Hofhuis's critique: Ely &amp; Thomas's perspectives assume organisations <i>want</i> to engage diversity, <b>ignoring those that actively resist or reject it</b> — they leave out the negative/resistant stance."},
+
+/* ================= THEME 5 ================= */
+{t:"t5",q:"With an immigrant client from another country, what should you NOT say to your client?",
+o:["Would you prefer to switch to a therapist from your own cultural background?","Would you like to go for a walk during our session?","What is the problem you'd like to work on?","What do members of your culture say about that?"],c:0,
+e:"Pre-emptively offering to <b>hand the client to a same-culture therapist</b> can feel dismissive and like you're refusing to engage — it undermines the alliance. Culturally curious questions (D) and ordinary clinical questions are fine."},
+
+{t:"t5",q:"Which of the following is NOT a reason that hikikomori (severe social withdrawal) is found mainly in Japan?",
+o:["Its criteria match a standard DSM-5 disorder","Cultural factors specific to Japan","Particular parenting styles","Personality factors"],c:0,
+e:"Hikikomori is considered Japan-specific precisely because it does <b>not</b> map neatly onto a standard DSM-5 category — it's explained by cultural, family/parenting and personality factors instead."},
+
+{t:"t5",q:"Which cultural factor most strongly influences the prevalence of anorexia and bulimia today?",
+o:["Societal standards about thinness","Ritual practices about diets","Social media and its portrayal of body image","Climate and food availability"],c:2,
+e:"<b>Social media</b> and its relentless circulation of idealised body images is the strongest contemporary cultural driver of eating-disorder prevalence."},
+
+{t:"t5",q:"Which of the following is considered a culture-bound syndrome?",
+o:["Bulimia","Schizophrenia","Depression","Social anxiety disorder"],c:0,
+e:"<b>Bulimia</b> is often cited as a (Western) culture-bound syndrome, tied to specific cultural ideals about body and food. Schizophrenia, depression and social anxiety appear across cultures."},
+
+{t:"t5",q:"Raja immigrated for new career opportunities, but after a year he feels stressed and sad because things didn't turn out as he expected. What best explains his stress?",
+o:["A push from his home culture that he regrets leaving","A pull toward the host culture, with stress arising because his expectations were not fulfilled","Purely biological depression unrelated to migration","Language barriers alone"],c:1,
+e:"Raja was drawn by a <b>pull factor</b> (career opportunity). His distress comes from the <b>gap between expectation and reality</b> in the host culture — unmet expectations, not a push from home."},
+
+{t:"t5",q:"J is a Mexican immigrant currently experiencing stress and a language barrier. Based on the texts, what should you do to support him?",
+o:["Tell him to focus only on learning the new language","Introduce him to a Mexican community in his current country for social support","Advise him to avoid other Mexicans to integrate faster","Recommend he return home"],c:1,
+e:"Connecting J to a <b>co-ethnic community</b> provides social support that buffers acculturative stress — a text-supported protective strategy, especially while a language barrier persists."},
+
+{t:"t5",q:"Which of the following is NOT a protective factor against common mental disorders during the immigration process?",
+o:["Maintaining rigid, clearly fixed gender roles","Family reunion","Language fluency","High skill level / qualifications"],c:0,
+e:"Family reunion, language fluency and skills all <b>protect</b> mental health. Maintaining <b>rigid fixed gender roles</b> is not protective — it can add strain — so it's the odd one out."},
+
+{t:"t5",q:"Based on the engagement article, which statement is correct?",
+o:["Engagement is unaffected by the therapist's cultural awareness","Engagement is higher when clients perceive that the therapist shows cultural understanding","Engagement depends only on the therapist's professional credentials","Matching ethnicity is the only thing that improves engagement"],c:1,
+e:"The key finding: clients <b>engage more</b> when they <i>perceive</i> their therapist as <b>culturally understanding</b> — perceived cultural competence matters more than ethnic matching alone."}
+];
+
+let answered={}, score=0;
+const quiz=document.getElementById('quiz');
+const nav=document.getElementById('nav');
+const KEYS=['A','B','C','D'];
+
+// build nav
+THEMES.forEach(th=>{
+  const cnt=Q.filter(q=>q.t===th.id).length;
+  const a=document.createElement('div');
+  a.className='navlink';a.id='nav-'+th.id;
+  a.innerHTML='<span>'+th.name.split('—')[0].trim()+'</span><span class="cnt">'+cnt+'</span>';
+  a.onclick=()=>document.getElementById('sec-'+th.id).scrollIntoView({behavior:'smooth',block:'start'});
+  nav.appendChild(a);
+});
+
+// build quiz
+THEMES.forEach(th=>{
+  const sec=document.createElement('div');sec.id='sec-'+th.id;
+  const hd=document.createElement('div');hd.className='themehd';
+  hd.innerHTML='<h2>'+th.name+'</h2>';
+  sec.appendChild(hd);
+  const d=document.createElement('div');d.className='themedesc';d.innerHTML=th.desc;sec.appendChild(d);
+  Q.forEach((q,i)=>{
+    if(q.t!==th.id)return;
+    const card=document.createElement('div');card.className='q';card.id='q'+i;
+    let html='<div class="qnum">Question '+(i+1)+'</div><div class="qtext">'+q.q+'</div>';
+    q.o.forEach((opt,j)=>{
+      html+='<div class="opt" data-q="'+i+'" data-o="'+j+'"><div class="key">'+KEYS[j]+'</div><div class="otext">'+opt+'</div></div>';
+    });
+    html+='<div class="expl" id="e'+i+'"><b>Explanation.</b> '+q.e+'</div>';
+    card.innerHTML=html;sec.appendChild(card);
+  });
+  quiz.appendChild(sec);
+});
+document.getElementById('tot').textContent=Q.length;
+
+// interaction
+document.querySelectorAll('.opt').forEach(o=>{
+  o.addEventListener('click',function(){
+    const qi=+this.dataset.q, oi=+this.dataset.o;
+    if(answered[qi]!==undefined)return;
+    answered[qi]=oi;
+    const correct=Q[qi].c;
+    const opts=document.querySelectorAll('.opt[data-q="'+qi+'"]');
+    opts.forEach(op=>{
+      op.classList.add('locked');
+      const j=+op.dataset.o;
+      if(j===correct)op.classList.add('correct');
+      else if(j===oi)op.classList.add('wrong');
+      else op.classList.add('dim');
+    });
+    if(oi===correct)score++;
+    document.getElementById('e'+qi).classList.add('show');
+    updateScore();
+  });
+});
+
+function updateScore(){
+  const n=Object.keys(answered).length;
+  document.getElementById('sc').textContent=score;
+  const p=document.getElementById('pct');
+  if(n===0){p.textContent='Answer questions to begin';return;}
+  const pct=Math.round(100*score/n);
+  p.textContent=pct+'% correct · '+n+' of '+Q.length+' answered';
+}
+
+// active nav on scroll
+const secs=THEMES.map(t=>document.getElementById('sec-'+t.id));
+window.addEventListener('scroll',()=>{
+  let cur=THEMES[0].id;
+  secs.forEach(s=>{if(window.scrollY+140>=s.offsetTop)cur=s.id.replace('sec-','');});
+  THEMES.forEach(t=>{
+    document.getElementById('nav-'+t.id).classList.toggle('active',t.id===cur);
+  });
+});
+
+function resetAll(){
+  answered={};score=0;
+  document.querySelectorAll('.opt').forEach(o=>{o.classList.remove('locked','correct','wrong','dim');});
+  document.querySelectorAll('.expl').forEach(e=>e.classList.remove('show'));
+  updateScore();
+  window.scrollTo({top:0,behavior:'smooth'});
+}
+updateScore();
+</script>
+</body>
+</html>
